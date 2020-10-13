@@ -535,7 +535,8 @@ a:hover {
   .product .quantity__group {
     padding: 8px 16px;
     background-color: #ffffff;
-    border: 1px solid #dddddd; }
+    border: 1px solid #dddddd;
+    text-align: center; }
   .product p {
     font-size: 16px;
     font-weight: normal;
