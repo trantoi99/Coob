@@ -792,6 +792,9 @@ a:hover {
     margin-bottom: 50px; }
   .last .btn-green {
     padding: 16px 36px; }
+  @media screen and (max-width: 992px) {
+    .last .btn-green {
+      padding: 16px 30px; } }
   @media screen and (max-width: 991px) {
     .last .col-lg-5 {
       text-align: center;

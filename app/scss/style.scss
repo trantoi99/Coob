@@ -975,6 +975,11 @@ a:hover {
     .btn-green {
         padding: 16px 36px;
     }
+    @media screen and (max-width:992px) {
+        .btn-green {
+            padding: 16px 30px;
+        }
+    }
     @media screen and (max-width: 991px) {
         .col-lg-5 {
             text-align: center;
