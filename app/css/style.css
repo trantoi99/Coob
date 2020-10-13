@@ -182,7 +182,8 @@ a:hover {
         text-align: center; } }
   @media screen and (max-width: 320px) {
     .about .btn-green {
-      padding: 18px 5px; } }
+      padding: 18px 5px;
+      font-size: 12px; } }
   @media screen and (max-width: 281px) {
     .about .btn-green {
       font-size: 12px;
@@ -805,7 +806,8 @@ a:hover {
       padding: 16px 24px; } }
   @media screen and (max-width: 320px) {
     .last .btn-green {
-      padding: 16px 4px; } }
+      padding: 16px 4px;
+      font-size: 12px; } }
   @media screen and (max-width: 280px) {
     .last .btn-green {
       padding: 16px 12px;
