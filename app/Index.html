@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
     <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
@@ -335,7 +336,7 @@
                     <div class="quantity__width margin-bottom-40">
                         <div class="quantity__group">
                             <button type="button" class="minus" onclick="decreaseValue()"><i class="fa fa-minus" aria-hidden="true"></i></button>
-                            <input id="theInput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                            <input id="theInput" type="number" class="input-text qty text" title="Qty" value="1" min="0" step="1">
                             <button type="button" class="plus" onclick="increaseValue()"><i class="fa fa-plus" aria-hidden="true"></i></button>
                         </div>
                     </div>
@@ -351,7 +352,7 @@
     </section>
     <section class="faqs">
         <div class="container">
-            <div class="faqs__big-title pt-3">
+            <div class="faqs__title">
                 <h2>Let's Ask us Questions</h2>
             </div>
             <div class="row">
@@ -438,7 +439,7 @@
     <section class="last">
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-md-5">
+                <div class="col-lg-5">
                     <div class="padding-bottom-24">
                         <h2>
                             Level up Your Cooking’s Skill today
@@ -508,26 +509,5 @@
         </div>
     </footer>
 </body>
-<script>
-    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-    accordionItemHeaders.forEach(accordionItemHeader => {
-        accordionItemHeader.addEventListener("click", event => {
-            const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-            /* dùng mở một faqs
-             if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
-                 currentlyActiveAccordionItemHeader.classList.toggle("active");
-                 currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-             }
-             */
-            accordionItemHeader.classList.toggle("active");
-            const accordionItemBody = accordionItemHeader.nextElementSibling;
-            if (accordionItemHeader.classList.contains("active")) {
-                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-            } else {
-                accordionItemBody.style.maxHeight = 0;
-            }
-        });
-    });
-</script>
 
 </html>

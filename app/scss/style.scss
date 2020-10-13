@@ -1,5 +1,6 @@
 body {
     font-size: 16px;
+    font-family: 'Work Sans' !important;
 }
 
 h1,
@@ -31,6 +32,12 @@ p {
 
 .margin-bottom-40 {
     margin-bottom: 40px;
+}
+
+@media screen and (max-width:576px) {
+    h2 {
+        font-size: 32px !important;
+    }
 }
 
 .btn-green {
@@ -176,9 +183,22 @@ a:hover {
     .btn-green {
         padding: 18px 50px;
     }
+    @media screen and (max-width:992px) {
+        .col-md-1 {
+            display: none;
+        }
+        .col-md-5,
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
     @media screen and (max-width:768px) {
         padding-top: 80px;
         padding-bottom: 80px;
+        p {
+            text-align: center;
+        }
         .btn-green {
             padding: 18px 16px;
         }
@@ -186,6 +206,19 @@ a:hover {
     @media screen and (max-width:576px) {
         padding-top: 60px;
         padding-bottom: 60px;
+        .col-md-5,
+        .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+        .col-md-6 {
+            padding-bottom: 16px;
+        }
+        h2,
+        p {
+            text-align: center;
+        }
     }
     @media screen and (max-width:320px) {
         .btn-green {
@@ -290,6 +323,12 @@ a:hover {
         }
         .padding-bottom-24 {
             padding-bottom: 16px;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
         }
     }
 }
@@ -467,6 +506,10 @@ a:hover {
             max-width: 100%;
             text-align: center;
         }
+        h2,
+        p {
+            text-align: center;
+        }
         .container {
             padding-bottom: 80px;
         }
@@ -562,12 +605,12 @@ a:hover {
         }
     }
     @media screen and (max-width:768px) {
-        .faqs__big-title {
+        .testimonial__title {
             padding-bottom: 40px;
         }
     }
     @media screen and (max-width:576px) {
-        .faqs__big-title {
+        .testimonial__title {
             padding-bottom: 32px;
         }
         padding-bottom: 60px;
@@ -750,6 +793,9 @@ a:hover {
         .product__price {
             justify-content: center;
         }
+        .product__title {
+            font-size: 32px;
+        }
     }
     @media screen and (max-width: 320px) {
         .quantity__width {
@@ -764,8 +810,9 @@ a:hover {
 .faqs {
     padding-top: 100px;
     padding-bottom: 100px;
-    .faqs__big-title {
+    .faqs__title {
         text-align: center;
+        padding-bottom: 60px;
     }
     h2 {
         font-size: 40px;
@@ -849,6 +896,9 @@ a:hover {
     @media screen and (max-width:768px) {
         padding-top: 80px;
         padding-bottom: 80px;
+        .faqs__title {
+            padding-bottom: 40px;
+        }
     }
     @media screen and (max-width :576px) {
         padding-top: 60px;
@@ -859,6 +909,9 @@ a:hover {
         .col-md-5 {
             flex: 0 0 100%;
             max-width: 100%;
+        }
+        .faqs__title {
+            padding-bottom: 32px;
         }
     }
 }
@@ -920,6 +973,35 @@ a:hover {
     }
     .btn-green {
         padding: 16px 36px;
+    }
+    @media screen and (max-width: 991px) {
+        .col-lg-5 {
+            text-align: center;
+            justify-content: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        .text-center {
+            justify-content: center !important;
+            text-align: center !important;
+        }
+    }
+    @media screen and (max-width:380px) {
+        .btn-green {
+            padding: 16px 24px;
+        }
+    }
+    @media screen and (max-width:320px) {
+        .btn-green {
+            padding: 16px 4px;
+        }
+    }
+    @media screen and (max-width:280px) {
+        .btn-green {
+            padding: 16px 12px;
+            font-size: 12px;
+        }
     }
 }
 
