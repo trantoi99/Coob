@@ -1,3 +1,36 @@
+$(document).ready(function() {
+    $('.slide').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        focusOnSelect: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
 let countDown = new Date('December 31, 2020 00:00:00').getTime();
 let now = new Date().getTime();
 let distance = (countDown - now) / 1000;
@@ -12,11 +45,15 @@ let x = setInterval(function() {
     hours = Math.floor(distance_ / (1000 * 60 * 60) % 60);
     days = Math.floor(distance_ / (1000 * 60 * 60 * 24) % 100);
 
-
     document.getElementById('day').innerText = days;
     document.getElementById('hour').innerText = hours;
     document.getElementById('minute').innerText = minutes;
     document.getElementById('second').innerText = seconds;
+
+    document.getElementById('days').innerText = days;
+    document.getElementById('hours').innerText = hours;
+    document.getElementById('minutes').innerText = minutes;
+    document.getElementById('seconds').innerText = seconds;
 }, 1000);
 
 function increaseValue() {

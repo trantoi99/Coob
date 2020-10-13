@@ -153,7 +153,7 @@
                     <img src="css/img/signature.png" alt="signature" class="img-fluid">
                 </div>
                 <div class="col-md-1"></div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-col">
                     <img src="css/img/Avartar.png" alt="Avartar" class="img-fluid">
                 </div>
             </div>
@@ -162,37 +162,46 @@
     <section class="new">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <img src="css/img/Rectangle719.png" alt="couple" class="img-fluid">
                 </div>
+                <div class="col-md-1"></div>
                 <div class="col-md-5">
-                    <div class="">
+                    <div class="padding-bottom-32">
                         <h3>
                             You will get :
                         </h3>
                     </div>
-                    <div class="new__icon">
+                    <div class="new__icon padding-bottom-24">
                         <i class="las la-file-alt"></i>
-                        <div>
-                            40 sections
+                        <div class="pl-2">
+                            <p>
+                                40 sections
+                            </p>
                         </div>
                     </div>
-                    <div class="new__icon">
+                    <div class="new__icon padding-bottom-24">
                         <i class="las la-hamburger"></i>
-                        <div>
-                            Private group access
+                        <div class="pl-2">
+                            <p>
+                                Private group access
+                            </p>
                         </div>
                     </div>
-                    <div class="new__icon">
+                    <div class="new__icon padding-bottom-24">
                         <i class="las la-utensils"></i>
-                        <div>
-                            1 vs 1 mentor
+                        <div class="pl-2">
+                            <p>
+                                1 vs 1 mentor
+                            </p>
                         </div>
                     </div>
-                    <div class="new__icon">
+                    <div class="new__icon padding-bottom-40">
                         <i class="las la-fish"></i>
-                        <div>
-                            40 sections
+                        <div class="pl-2">
+                            <p>
+                                40 sections
+                            </p>
                         </div>
                     </div>
                     <div>
@@ -218,7 +227,7 @@
                         <a class="btn-white" href="#">DOWNLOAD DEMO</a>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 order-col">
                     <img src="css/img/Rectangle718.png" alt="r718" class="img-fluid checkout__img--absolute">
                 </div>
             </div>
@@ -229,12 +238,75 @@
             <div class="testimonial__title">
                 <h2>Checkout Students Say about this Book</h2>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-
+            <div class="row slide">
+                <div class="col-md-5">
+                    <div>
+                        <div class="d-flex padding-bottom-16">
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                        </div>
+                        <div class="padding-bottom-24">
+                            <h3>Amazing book!!!</h3>
+                        </div>
+                        <div class="padding-bottom-32">
+                            <p>
+                                LayoutHub is an easy page builder that helps merchants quickly set up an online store with any kind of page type by using our library of pre-designed layouts.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-baseline">
+                            <h4>Anna Bella /&nbsp;</h4>
+                            <h5>STUDENT</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-
+                <div class="col-md-5">
+                    <div>
+                        <div class="d-flex padding-bottom-16">
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                        </div>
+                        <div class="padding-bottom-24">
+                            <h3>Best cooking book ever!</h3>
+                        </div>
+                        <div class="padding-bottom-32">
+                            <p>
+                                LayoutHub is an easy page builder that helps merchants quickly set up an online store with any kind of page type by using our library of pre-designed layouts.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-baseline">
+                            <h4>Anna Bella /&nbsp;</h4>
+                            <h5>STUDENT</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div>
+                        <div class="d-flex padding-bottom-16">
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                            <i class="las la-star checked"></i>
+                        </div>
+                        <div class="pa padding-bottom-24">
+                            <h3>Best cooking book ever!</h3>
+                        </div>
+                        <div class="padding-bottom-32">
+                            <p>
+                                LayoutHub is an easy page builder that helps merchants quickly set up an online store with any kind of page type by using our library of pre-designed layouts.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-baseline">
+                            <h4>Anna Bella /&nbsp;</h4>
+                            <h5>STUDENT</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,10 +329,201 @@
                     <div>
                         <p>LayoutHub is an easy page builder that helps merchants quickly set up an online store with any kind of page type.</p>
                     </div>
+                    <div>
+                        Quantity
+                    </div>
+                    <div class="quantity__group">
+                        <button type="button" class="minus" onclick="decreaseValue()"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                        <input id="theInput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                        <button type="button" class="plus" onclick="increaseValue()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div>
+                        <a class="btn-green" href="#">
+                            BUY IT NOW
+                        </a>
+                    </div>
+                    <img src="css/img/a-icon-payment.method.png" alt="payment" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
+    <section class="faqs">
+        <div class="container">
+            <div class="faqs__big-title pt-3">
+                <h2>Let's Ask us Questions</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>Can you use for jewlery and resin crafting??</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>As long as the pieces are small, yes. I use it for nails and for resin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>Is there a sunuv uv, led & nail blower combined?</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>As long as the pieces are small, yes. I use it for nails and for resin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>How will I know that my order was eccepted?</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>As long as the pieces are small, yes. I use it for nails and for resin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>Can you use for jewlery and resin crafting??</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>As long as the pieces are small, yes. I use it for nails and for resin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>Is there a sunuv uv, led & nail blower combined?</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>As long as the pieces are small, yes. I use it for nails and for resin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                <h4>How will I know that my order was eccepted?</h4>
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>As long as the pieces are small, yes. I use it for nails and for resin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="last">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-5">
+                    <h2>
+                        Level up Your Cooking’s Skill today
+                    </h2>
+                    <div>
+                        <ul class="d-flex text-center">
+                            <li><span id="days"></span>
+                                <p>Days</p>
+                            </li>
+                            <li><span id="hours"></span>
+                                <p>HRS</p>
+                            </li>
+                            <li> <span id="minutes"></span>
+                                <p>MINS</p>
+                            </li>
+                            <li><span id="seconds"></span>
+                                <p>SECS</p>
+                            </li>
+                        </ul>
+                        <div>
+                            <a class="btn-green" href="#">LEVEL UP MY SKILL NOW - $20</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <h2>
+                            Coob
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer__text">
+                        <h4>
+                            Shipping & return
+                        </h4>
+                        <h4>
+                            Contact us
+                        </h4>
+                        <h4>
+                            Warranty & Support
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer__icon">
+                        <i class="lab la-facebook-f"></i>
+
+                        <i class="lab la-instagram"></i>
+
+                        <i class="lab la-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="coppryright">
+                © 2020
+            </div>
+        </div>
+    </footer>
 </body>
+<script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+    accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+            const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+            /* dùng mở một faqs
+             if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+                 currentlyActiveAccordionItemHeader.classList.toggle("active");
+                 currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+             }
+             */
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if (accordionItemHeader.classList.contains("active")) {
+                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            } else {
+                accordionItemBody.style.maxHeight = 0;
+            }
+        });
+    });
+</script>
 
 </html>
