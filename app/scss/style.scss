@@ -991,8 +991,10 @@ a:hover {
     @media screen and (max-width:380px) {
         .btn-green {
             padding: 16px 18px;
+            font-size: 12px;
         }
     }
+    @media screen and (max-width:320px) {}
     @media screen and (max-width:320px) {
         .btn-green {
             padding: 16px 4px;

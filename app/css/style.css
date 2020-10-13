@@ -803,7 +803,8 @@ a:hover {
       text-align: center !important; } }
   @media screen and (max-width: 380px) {
     .last .btn-green {
-      padding: 16px 18px; } }
+      padding: 16px 18px;
+      font-size: 12px; } }
   @media screen and (max-width: 320px) {
     .last .btn-green {
       padding: 16px 4px;
