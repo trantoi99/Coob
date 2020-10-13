@@ -165,7 +165,7 @@ a:hover {
       .about p {
         text-align: center; }
       .about .btn-green {
-        padding: 18px 16px; } }
+        padding: 18px 10px; } }
   @media screen and (max-width: 576px) {
     .about {
       padding-top: 60px;
