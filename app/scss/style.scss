@@ -1,3 +1,7 @@
+body {
+    font-size: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +27,10 @@ p {
 
 .padding-bottom-40 {
     padding-bottom: 40px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
 }
 
 .btn-green {
@@ -294,7 +302,7 @@ a:hover {
         padding-bottom: 100px;
     }
     background-color: #0b1400;
-    h3 {
+    h2 {
         font-size: 40px;
         font-weight: 600;
         font-stretch: normal;
@@ -580,10 +588,46 @@ a:hover {
         letter-spacing: -1.2px;
         color: #000000;
     }
+    .product__price {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        align-items: baseline;
+    }
+    .product__price--number {
+        font-size: 40px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -1.2px;
+        color: #000000;
+    }
+    .product__price--text {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.5;
+        letter-spacing: -0.32px;
+        color: #ff0000;
+    }
     .quantity__group {
         padding: 8px 16px;
         background-color: #ffffff;
         border: 1px solid #dddddd;
+    }
+    p {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: -0.32px;
+        text-align: left;
+        color: #555555;
     }
     .text {
         font-size: 14px;
@@ -629,17 +673,19 @@ a:hover {
         outline: none;
         background-color: #ffffff;
     }
+    .quantity__width {
+        width: 30%;
+    }
     .quantity_group {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        border-radius: 3px;
-        height: 64px;
-        border-radius: 12px;
-        border: solid 1px #dddddd;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        height: 48px;
+        border: solid 1px #070505;
         background-color: #ffffff;
         padding: 10px 8px;
-        margin-right: 15px;
         font-size: 1rem;
         font-weight: bold;
         font-stretch: normal;
@@ -647,8 +693,70 @@ a:hover {
         line-height: 1.5;
         letter-spacing: normal;
         color: #000000;
-        i {
-            opacity: 0.5;
+        text-align: center;
+    }
+    i {
+        opacity: 0.2;
+    }
+    .product__quantity {
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: -0.32px;
+        color: #000000;
+    }
+    .btn-green {
+        padding: 18px 158px;
+    }
+    @media screen and (max-width:1024px) {
+        .col-md-1 {
+            display: none;
+        }
+        .col-md-5,
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .btn-green {
+            padding: 18px 120px;
+        }
+    }
+    @media screen and (max-width:768px) {
+        .btn-green {
+            padding: 18px 100px;
+        }
+        .quantity__width {
+            width: 40%;
+        }
+    }
+    @media screen and (max-width:576px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .col-md-5,
+        .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+        .col-md-6 {
+            padding-bottom: 16px;
+        }
+        .quantity__width {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .product__price {
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .quantity__width {
+            width: 50%;
+        }
+        .btn-green {
+            padding: 18px 68px;
         }
     }
 }
@@ -660,13 +768,14 @@ a:hover {
         text-align: center;
     }
     h2 {
-        font-size: 3rem;
-        font-weight: normal;
+        font-size: 40px;
+        font-weight: 600;
         font-stretch: normal;
         font-style: normal;
-        line-height: 1.25;
-        letter-spacing: -0.96px;
-        color: #000000;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1a1a1a;
     }
     .accordion {
         margin: 2rem auto;
@@ -683,18 +792,19 @@ a:hover {
         padding-bottom: 24px;
     }
     .accordion-item-header h4 {
-        font-weight: bold;
+        font-size: 18px;
+        font-weight: 500;
         font-stretch: normal;
         font-style: normal;
-        line-height: 1;
+        line-height: 1.33;
         letter-spacing: normal;
-        color: #000000;
-        font-size: 1.125rem;
+        text-align: left;
+        color: #1a1a1a;
         padding-right: 40px !important;
     }
     .accordion-item-header::after {
         content: "\002B";
-        font-size: 1.125rem;
+        font-size: 18px;
         position: absolute;
         right: 1rem;
         font-weight: normal;
@@ -718,13 +828,14 @@ a:hover {
         padding-bottom: 24px;
     }
     .accordion-item-body-content p {
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.5;
         letter-spacing: normal;
-        color: #666666;
+        opacity: 0.8;
+        text-align: left;
     }
     @media screen and (max-width:1100px) {
         .col-md-1 {
@@ -754,11 +865,20 @@ a:hover {
 
 .last {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 78px;
     background-image: url(img/Rectangle725.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: -1.2px;
+        color: #000000;
+    }
     ul {
         list-style-type: none;
     }
@@ -795,11 +915,19 @@ a:hover {
         margin-right: 8px !important;
         padding: 8px 12px !important;
     }
+    .margin-bottom-32 {
+        margin-bottom: 50px;
+    }
+    .btn-green {
+        padding: 16px 36px;
+    }
 }
 
 footer {
     .container {
         border-bottom: 1px solid #e8e8e8;
+        padding-top: 30px;
+        padding-bottom: 24px;
     }
     .logo {
         text-align: left;
@@ -829,6 +957,18 @@ footer {
         display: -ms-flexbox;
         display: -moz-flex;
         display: -webkit-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h4 {
+        padding-right: 48px !important;
+    }
+    h4:last-child {
+        padding-right: 0 !important;
+    }
+    .col-md-6,
+    .col-md-3 {
+        align-self: center;
     }
     .footer__icon {
         display: flex;
@@ -836,8 +976,43 @@ footer {
         display: -ms-flexbox;
         display: -moz-flex;
         display: -webkit-flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    i {
+        padding-right: 16px;
+    }
+    i:last-child {
+        padding-right: 0;
     }
     .coppryright {
         text-align: center;
+    }
+    @media screen and (max-width:576px) {
+        .logo {
+            text-align: center;
+        }
+        .row {
+            flex-direction: column;
+            text-align: center;
+        }
+        .col-md-5 {
+            justify-content: center;
+            text-align: center;
+        }
+        .footer__text {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .footer__icon {
+            padding-top: 16px;
+            justify-content: center;
+        }
+        h4 {
+            padding-right: 0 !important;
+        }
+        h4 {
+            padding-top: 16px !important;
+        }
     }
 }
